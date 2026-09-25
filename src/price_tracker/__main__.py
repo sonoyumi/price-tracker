@@ -1,13 +1,6 @@
-"""Точка входа: `python -m price_tracker` или команда `price-tracker`."""
+"""Entry point: `python -m price_tracker`."""
 
-
-def greet(name: str) -> str:
-    return f"Привет, {name}!"
-
-
-def main() -> None:
-    print(greet("мир"))
-
+from price_tracker.cli import main
 
 if __name__ == "__main__":
     main()

@@ -1,23 +1,21 @@
-# Секреты
+# Secrets and personal lists
 .env
 .env.*
 !.env.example
+products.toml
 
-# Данные и логи
+# Price history and exports
 data/
 *.db
-*.sqlite3
-*.log
+prices*.csv
 
 # Python
 __pycache__/
 *.py[cod]
 .venv/
-venv/
 *.egg-info/
 .pytest_cache/
 .ruff_cache/
-.mypy_cache/
 dist/
 build/
 

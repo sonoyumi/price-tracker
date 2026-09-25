@@ -1,0 +1,24 @@
+# Список товаров для отслеживания. Скопируйте в products.toml и впишите свои.
+#
+#   id              — латиницей, уникальный (используется в командах: price-tracker history <id>)
+#   price_selector  — CSS-селектор элемента с ценой; можно не указывать, если магазин
+#                     размечает товар по schema.org (JSON-LD) — тогда цена найдётся сама
+#   stock_selector  — (необязательно) элемент с текстом «в наличии / нет в наличии»
+#   target_price    — (необязательно) прислать алерт, когда цена станет не выше этой
+#
+# Примеры ниже — books.toscrape.com, учебный сайт, созданный специально для практики парсинга.
+
+[[product]]
+id = "light-in-the-attic"
+name = "A Light in the Attic"
+url = "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+price_selector = "p.price_color"
+stock_selector = "p.instock.availability"
+target_price = 45.0
+
+[[product]]
+id = "tipping-the-velvet"
+name = "Tipping the Velvet"
+url = "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+price_selector = "p.price_color"
+stock_selector = "p.instock.availability"
